@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Home Page</title>
+<title>About Us</title>
 	<script src="https://kit.fontawesome.com/dce970815f.js" crossorigin="anonymous"></script>
 
 	<style>
@@ -99,12 +99,7 @@
 			height: 1280px;
 			
 		}
-	.slideshow-container
-		{
-			margin-left: 180px;
-			position:relative;
-			padding-top: 30px;
-		}
+	
 		
 		
 		
@@ -113,7 +108,7 @@
 			.dropdown
 	{
 		
-		overflow: hidden;
+		overflow: visible;
 	}
 	.dropdown-content
 	{
@@ -162,7 +157,7 @@
 	text-decoration: none;
 	background-color: ;
 	border: ;
-	border-color:;
+	border-color: #560708;
 	width: 150px;
 	padding-right: 3px;
 	padding-left: 3px;
@@ -173,7 +168,7 @@
 	a:hover{
 	text-decoration: underline;	
 	background-color:;
-	border:;
+	border: ;
 	border-color:;
 	width: 150px;
 	padding-right: 3px;
@@ -187,13 +182,46 @@
 	text-decoration: none;
 	background-color: #545252;
 	border: thin solid;
-	border-color:;
+	border-color: #560708;
 	width: 150px;;
 	padding-right: 3px;
 	padding-left: 3px;
 	text-align: center;	
 		
 	}
+		
+		
+		main
+		{
+
+			background-color:#888080;
+			margin-left: 20%;
+
+		}
+
+		.img
+		{
+			margin-top: 80px;
+			width: 500px;	
+			display: block;
+			color: white;
+			float: left;
+			font-size: 17px;
+
+
+		}
+		.paragraph
+		{
+			width : 100%;
+			display: block;
+			text-align: justify;
+  			text-justify: inter-word;
+			
+		}		
+		
+		
+		
+		
 	</style>
 </head>
 
@@ -216,9 +244,12 @@
 		<h1>PHOTOGRAPHY</h1>
 		
 		
+		
 	<ul>
+		
 		<li><a href="index.html">Home</a></li>
-	  <div class="dropdown">
+		
+		<div class="dropdown">
 			<li><a class ="active" href="dropdown.html">Portfolio</a></li>
 			<div class="dropdown-content">
 				<a href="color.html">Color</a>
@@ -228,15 +259,16 @@
 			</div>
 		
 		<li><a href="about.html">About</a></li>
-		<li><a href="contactus.html">Contact</a></li>
+		
+	  <li><a href="contactus.html">Contact</a></li>
 		
 	</ul>
 		
 		
 		<div class="social">
-			<a href="https://www.facebook.com/profile.php?id=61557133071982"><i class="fa-brands fa-facebook-f"></i></a>
-			<a href="https://twitter.com/home?lang=en"><i class="fa-brands fa-square-x-twitter"></i></a>
-			<a href="https://www.instagram.com/mike.raleigh.71/"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
 		</div>
 		
 		
@@ -253,99 +285,22 @@
 		</aside>
 	<main>
 		
-		<div class="slideshow-container">
+		<div class="img">
 		
-		
-		 	 <div class="mySlides fade">
-			  
-				 <div class="numbertext">1/3</div>
-			  
-<img src="images/color1.JPG" width="800" height="800" alt=""/>
+    <img src="images/HV0A4601.JPG" width="500" height="393" alt=""/>
+	
+		  <p class="paragraph">In my work, I strive to not merely photograph  scenes but to compose narratives that resonate with the inherent beauty found  in the abstract elements of those scenes. I invite viewers to look beyond the  immediate and enter a world shaped by shadow and light, where each image serves  as a catalyst for personal interpretation and emotional exploration.</p>
+<p>At Abstract Photography, we capture the unseen and express the unspoken  through our lens. We are dedicated to exploring the boundaries of light and  shadow to create abstract photographs that provoke thought, evoke emotions, and  connect with the viewer on profound level. Our mission is to deliver unique  visual experiences that challenge perceptions and celebrate the abstract beauty  of the world around us. </p>
 			
-		<div class="text"></div>		 
-				 
-				 
-				 
-				 
-				 
 			</div>
-			
-			 <div class="mySlides fade">
-			  
-				 <div class="numbertext">2/3</div>
-			  
-               <img src="images/color.JPG" width="800" height="800" alt=""/>
-				 
-<div class="text"></div>		 
-				 
-				 
-				 
-				 
-				 
-			</div>
-			
-			
-			
-			 <div class="mySlides fade">
-			  
-				 <div class="numbertext">3/3</div>
-			  
-               <img src="images/blkwh3.JPG" width="800" height="800" alt=""/>
-				 
-<div class="text"></div>		 
-				 
-				 
-				 
-				 
-				 
-			</div>
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			
-			
-		</div>
-	
-  
-	
-	
-
-	
-	</main>
-	
-	
-	
-	<script>
-		 let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  
-  slides[slideIndex-1].style.display = "block";
-  
-}
 		
 		
 		
-	</script>
+		
+    </main>
+	
+	
+	
 	
 	
 		
